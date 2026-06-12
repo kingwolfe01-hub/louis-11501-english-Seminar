@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>115-1 暑假國小英語線上備課研習</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        /* 隱藏滾動條並保持滾動，營造原生 App 質感 */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-amber-100">
+
+    <header class="relative overflow-hidden bg-gradient-to-b from-sky-100 via-emerald-50 to-slate-50 px-6 pt-12 pb-8 text-center">
+        <div class="absolute -top-10 -left-10 h-32 w-32 rounded-full bg-white/40 blur-xl"></div>
+        <div class="absolute top-20 -right-10 h-40 w-40 rounded-full bg-sky-200/30 blur-2xl"></div>
+        
+        <div class="relative z-10 mx-auto max-w-md">
+            <span class="inline-block rounded-full bg-emerald-100 px-3.5 py-1 text-xs font-bold tracking-wide text-emerald-800 uppercase mb-3">
+                115-1 學年度暖身趴
+            </span>
+            <h1 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+                暑假國小英語<br><span class="bg-gradient-to-r from-sky-600 to-emerald-600 bg-clip-text text-transparent">線上備課研習</span>
+            </h1>
+            <p class="mt-4 text-sm leading-relaxed text-slate-600">
+                老師們辛苦了！🧘‍♀️ 免去舟車勞頓，在家就能高效充電！連續 6 場精彩主題，每場 3 小時精華，帶您輕鬆掌握新學期授課寶典。 💻✨
+            </p>
+        </div>
+    </header>
+
+    <div class="sticky top-0 z-50 border-b border-slate-100 bg-white/80 px-4 py-3 backdrop-blur-md">
+        <div class="mx-auto flex max-w-md justify-center space-x-2">
+            <button onclick="filterGrade('all')" id="btn-all" class="flex-1 rounded-full bg-slate-900 px-3 py-2 text-xs font-medium text-white shadow-sm transition-all">
+                全部場次
+            </button>
+            <button onclick="filterGrade('low')" id="btn-low" class="flex-1 rounded-full bg-slate-100 px-3 py-2 text-xs font-medium text-slate-600 transition-all">
+                低年級
+            </button>
+            <button onclick="filterGrade('mid')" id="btn-mid" class="flex-1 rounded-full bg-slate-100 px-3 py-2 text-xs font-medium text-slate-600 transition-all">
+                中年級
+            </button>
+            <button onclick="filterGrade('high')" id="btn-high" class="flex-1 rounded-full bg-slate-100 px-3 py-2 text-xs font-medium text-slate-600 transition-all">
+                高年級
+            </button>
+        </div>
+    </div>
+
+    <main class="mx-auto max-w-md px-4 py-6 space-y-8">
+
+        <section data-grade="low" class="grade-card overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-xs transition-all duration-300">
+            <img src="全）何嘉仁 115-1 暑假備課研習 0817-WS.png" alt="第一場研習海報" class="w-full h-auto rounded-t-2xl object-cover">
+            
+            <div class="p-5">
+                <div class="flex flex-wrap gap-1 mb-2">
+                    <span class="rounded bg-sky-50 px-2 py-0.5 text-[11px] font-medium text-sky-700">#低年級推薦</span>
+                    <span class="rounded bg-amber-50 px-2 py-0.5 text-[11px] font-medium text-amber-700">#低準備高互動</span>
+                </div>
+                <h2 class="text-lg font-bold text-slate-900 leading-snug">
+                    第一場：學生欲罷不能的教學授課寶典！
+                </h2>
+                <div class="mt-2 space-y-1 text-xs text-slate-500">
+                    <p class="flex items-center">⏱️ <span class="ml-1.5 font-medium text-slate-700">08/17(一) 09:30 - 12:30</span></p>
+                    <p class="flex items-center">👨‍🏫 講師：李敏誠 Lian 老師 (中原國小)</p>
+                </div>
+                <div class="mt-4 rounded-xl bg-slate-50 p-3 text-sm">
+                    <p class="font-medium text-slate-800 mb-1.5">💡 課堂帶得走技能：</p>
+                    <ul class="list-disc list-inside space-y-1 text-xs text-slate-600">
+                        <li>活用原生附件，實現「低準備」質感教學</li>
+                        <li>內化實體班級經營與體感互動遊戲</li>
+                    </ul>
+                </div>
+                <div class="mt-5">
+                    <a href="https://forms.gle/iCKvCHZbie9kWzrx5" target="_blank" class="flex h-12 w-full items-center justify-center rounded-xl bg-amber-400 font-bold text-slate-900 shadow-md hover:bg-amber-300 hover:scale-[1.01] active:scale-95 active:bg-amber-500 transition-all ring-2 ring-amber-500/20">
+                        🚨 點我線上報名第一場 (8/10截止)
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section data-grade="low" class="grade-card overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-xs transition-all duration-300">
+            <img src="全）何嘉仁 115-1 暑假備課研習 0818-FW.jpg" alt="第二場研習海報" class="w-full h-auto rounded-t-2xl object-cover">
+            
+            <div class="p-5">
+                <div class="flex flex-wrap gap-1 mb-2">
+                    <span class="rounded bg-sky-50 px-2 py-0.5 text-[11px] font-medium text-sky-700">#低年級推薦</span>
+                    <span class="rounded bg-purple-50 px-2 py-0.5 text-[11px] font-medium text-purple-700">#多感官教學</span>
+                </div>
+                <h2 class="text-lg font-bold text-slate-900 leading-snug">
+                    第二場：Have Fun! 上一堂英文版的生活課吧！
+                </h2>
+                <div class="mt-2 space-y-1 text-xs text-slate-500">
